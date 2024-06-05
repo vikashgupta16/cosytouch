@@ -8,7 +8,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f0f0f0;
+    background: #f9acac;
     color: var(--text-color);
 }
 
@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     padding: 1rem 2rem;
     background: var(--primary-color);
-    color: #fff;
+    color: #ff0000;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -27,7 +27,7 @@ header {
 header a.logo {
     font-size: 2rem;
     text-transform: uppercase;
-    color: #fff;
+    color: #1c1a1a;
 }
 
 header .navbar {
@@ -41,7 +41,7 @@ header .navbar a {
 }
 
 header .icons a {
-    color: #fff;
+    color: #fd5edd;
     margin-left: 1rem;
 }
 
@@ -89,7 +89,7 @@ header label.fas {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('../images/home-bg.jpg') no-repeat center center/cover;
+    background: url('images/background.avif') no-repeat center center/cover;
     color: #fff;
     text-align: center;
 }
@@ -209,7 +209,7 @@ section {
 }
 
 .products .box {
-    background: #fff;
+    background: #91ffc2;
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
@@ -257,7 +257,7 @@ section {
 }
 
 .review {
-    background: #fff;
+    background: #ffa3a3;
 }
 
 .review .box-container {
@@ -295,7 +295,7 @@ section {
 }
 
 .contact {
-    background: #fff;
+    background: #ff953e;
 }
 
 .contact .row {
@@ -343,7 +343,7 @@ section {
 
 .footer {
     background: var(--primary-color);
-    color: #fff;
+    color: #ffffff;
     padding: 2rem 1rem;
 }
 
@@ -364,7 +364,7 @@ section {
 }
 
 .footer .box a {
-    color: #fff;
+    color: #6d0000;
     display: block;
     margin-bottom: 0.5rem;
 }
