@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 h1{
     font-size: 50px;
     line-height: 64px;
@@ -26,6 +29,7 @@ h6{
 p{
     font-size: 16px;
     color: rgb(43, 43, 48);
+    margin: 15px 0 20px 0;
 }
 .section-p1{
     padding: 40px 80px;
@@ -79,10 +83,32 @@ body{
     bottom: -4px;
     left: 20px;
 }
-#hero{
-    background-image: url(images/hero2.png);
-    height: 100%;
+#hero {
+    background-image: url("images/hero2.png");
+    height: 90vh;
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: crimson;
+}
+#hero button{
+    background-image: url('images/button.png');
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
 }
