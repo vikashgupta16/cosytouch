@@ -80,7 +80,9 @@ body{
     left: 20px;
 }
 #hero{
-    background-image: url(images/hero back 2.png);
+    background-image: url(images/hero2.png);
     height: 100%;
     width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
 }
