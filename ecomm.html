@@ -82,6 +82,27 @@
                 </div>
             </div>
         </div>
+<div id="product-list"></div>
+<script>
+  fetch('/api/products')
+    .then((response) => response.json())
+    .then((products) => {
+      const productList = document.getElementById('product-list');
+      products.forEach((product) => {
+        productList.innerHTML += `
+          <div class="product">
+            <h3>${product.name}</h3>
+            <p>Price: $${product.price}</p>
+            <button onclick="addToCart(${product.id})">Add to Cart</button>
+          </div>
+        `;
+      });
+    });
+
+  function addToCart(productId) {
+    alert(`Product ${productId} added to cart!`);
+  }
+</script>
 
         <div id="arrival">
             <div class="head">
