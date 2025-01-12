@@ -10,6 +10,17 @@
  
 </head>
 <body>
+    <button id="checkout">Checkout</button>
+<script>
+  document.getElementById('checkout').addEventListener('click', () => {
+    fetch('/create-checkout-session', { method: 'POST' })
+      .then((response) => response.json())
+      .then((data) => {
+        window.location.href = data.url;
+      });
+  });
+</script>
+
     <div class="container">
         <nav>
             <div class="logo">
