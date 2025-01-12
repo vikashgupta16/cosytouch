@@ -29,3 +29,27 @@ shopCard.forEach(function(card){
         document.querySelector("body").appendChild(div)
     })
 })
+const stripe = require('stripe')('your_stripe_secret_key');
+
+// Create a payment session
+app.post('/create-checkout-session', async (req, res) => {
+  const session = await stripe.checkout.sessions.create({
+    payment_method_types: ['card'],
+    line_items: [
+      {
+        price_data: {
+          currency: 'usd',
+          product_data: {
+            name: 'Example Product',
+          },
+          unit_amount: 1000, // $10
+        },
+        quantity: 1,
+      },
+    ],
+    mode: 'payment',
+    success_url: 'http://localhost:3000/success',
+    cancel_url: 'http://localhost:3000/cancel',
+  });
+  res.json({ url: session.url });
+});
